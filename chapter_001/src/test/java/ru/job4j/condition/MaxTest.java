@@ -13,6 +13,27 @@ public class MaxTest {
     }
 
     @Test
+    public void max1() { //Тест максимального значения
+        Max max = new Max();
+        int result = max.max(10, 5);
+        assertThat(result, is(10));
+    }
+
+    @Test
+    public void max2() { //Тест максимального значения
+        Max max = new Max();
+        int result = max.max(5, 10);
+        assertThat(result, is(10));
+    }
+
+    @Test
+    public void equal() { //Тест максимального значения
+        Max max = new Max();
+        int result = max.max(10, 10);
+        assertThat(result, is(10));
+    }
+/*
+    @Test
     public void first() {  //Тест максимального первого
         Max max = new Max();
         int firstsecond = max.max(2, 1);
@@ -31,7 +52,7 @@ public class MaxTest {
         Max max = new Max();
         int equal = max.max(1, 1);
         assertThat(equal, is(1));
-    }
+    }*/
 
 
 
