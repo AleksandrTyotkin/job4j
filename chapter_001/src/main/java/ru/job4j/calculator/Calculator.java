@@ -1,4 +1,9 @@
 package ru.job4j.calculator;
+/**
+ * Package for calculate task.
+ *
+ * @author Aleksandr Tyotkin (Tyotkin@list.ru)
+ */
 
 public class Calculator {
 
@@ -19,7 +24,10 @@ public class Calculator {
         System.out.println(first + "-" + second + " = " + result);
     }
 
-
+    /**
+     * Main.
+     * @param args - args.
+     */
     public static void main(String[] args) {
         add(1, 1);
         div(4,2);
