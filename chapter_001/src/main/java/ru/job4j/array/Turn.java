@@ -6,10 +6,11 @@ public class Turn {
         int index1 = array.length;
         index = index1;
         for (int i = 0; i < index / 2; i++) {
-            int tmp1 = array[index1 - 1];
-            int tmp = array[i];
-            array[i] = tmp1;
-            array[index1 - 1] = tmp;
+            int tmp = array[index1 - 1];
+           /*int tmp = array[i];
+            array[i] = tmp1;*/
+            array[index1 - 1] = array[i];
+            array[i] = tmp;
             index1--;
 
         }
