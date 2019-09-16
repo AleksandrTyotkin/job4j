@@ -47,4 +47,14 @@ public class FindLoopTest {
         int expect = 2;
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void example() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[]{5, 10, 3, 98, 56, 33 };
+        int value = 33;
+        int result = find.indexOf(input, value);
+        int expect = 5;
+        assertThat(result, is(expect));
+    }
 }
