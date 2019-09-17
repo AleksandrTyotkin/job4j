@@ -51,4 +51,24 @@ public class FindLoopTest {
         int expect = 2;
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void sortone() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[]{5, 2, 10, 0, 4};
+        int[] result = find.sort(input);
+        int[] expect = new int[]{0, 2, 4, 5, 10};
+        assertThat(result, is(expect));
+    }
+
+    @Test
+    public void sorttwo() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[]{5, 2, 10, 0, 4, 13, 3};
+        int[] result = find.sort(input);
+        int[] expect = new int[]{0, 2, 3, 4, 5, 10, 13};
+        assertThat(result, is(expect));
+    }
+
+
 }
