@@ -7,10 +7,10 @@ public class ArrayChar {
         int index = pref.length;
         int i = 0;
         for (; i < index; i++) {
-            if (word[i] != pref[i])
+            if (word[i] != pref[i]) {
                 result = false;
                 break;
-
+            }
 
 
         }
