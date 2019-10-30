@@ -7,9 +7,10 @@ public class Check {
         int i = 0;
         boolean tmp = data[i];
         for (; i < index; i++) {
-            if (data[i] != tmp)
+            if (data[i] != tmp) {
                 result = false;
-            break;
+                break;
+            }
 
         }
 
