@@ -9,6 +9,8 @@ public class ArrayChar {
         for (; i < index; i++) {
             if (word[i] != pref[i])
                 result = false;
+                break;
+
 
 
         }

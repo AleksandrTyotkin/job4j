@@ -9,7 +9,10 @@ public class Check {
         for (; i < index; i++) {
             if (data[i] != tmp)
                 result = false;
+            break;
+
         }
+
         return result;
 
     }
