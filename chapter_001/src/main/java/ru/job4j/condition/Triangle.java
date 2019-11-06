@@ -4,9 +4,9 @@ public class Triangle {
 
     /**
      * Метод вычисления полупериметра по длинам сторон.
-     *
+     * <p>
      * Формула.
-     *
+     * <p>
      * (a + b + c) / 2
      *
      * @param a расстояние между точками a b
@@ -15,12 +15,12 @@ public class Triangle {
      * @return полуперимента.
      */
     public double period(double a, double b, double c) {
-       return  (a + b + c) / 2;
+        return (a + b + c) / 2;
     }
 
     /**
      * Метод проверяет можно ли построить треугольник с такими длинами сторон.
-     *
+     * <p>
      * Подумайте какое надо написать условие, чтобы определить можно ли построить треугольник.
      *
      * @param a Длина от точки a b.
@@ -28,20 +28,22 @@ public class Triangle {
      * @param c Длина от точки b c.
      * @return
      */
-    private boolean exist(double a, double c, double b) {
-        if ((a < b + c) && ( b < c + a) && (c < a + b)){
-            //boolean exist =  true;
+    public static boolean exist(double a, double c, double b) {
+        boolean tmp = false;
+        if ((a < b + c) && (b < c + a) && (c < a + b)) {
+            tmp = true;
         }
-        return true;
+        return tmp;
     }
+
 
     /**
      * Метод должен вычислить площадь треугольника.
-     *
+     * <p>
      * Формула.
-     *
+     * <p>
      * √ p *(p - a) * (p - b) * (p - c)
-     *
+     * <p>
      * где √ - корень квадратный, для извлечения корня использовать метод Math.sqrt().
      *
      * @return Вернуть площадь, если треугольник существует или -1.

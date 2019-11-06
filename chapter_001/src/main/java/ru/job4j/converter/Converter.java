@@ -29,23 +29,23 @@ public class Converter {
         System.out.println("140 dollar are " + rubleD + " ruble.");
         int in = 140;
         int expected = 2;
-        int out_RE = rubleToEuro(in);
-        boolean passed_RE = expected == out_RE;
-            System.out.println("140 rubles are 2. Test result №1 : " + passed_RE);
+        int outRe = rubleToEuro(in);
+        boolean passedRe = expected == outRe;
+            System.out.println("140 rubles are 2. Test result №1 : " + passedRe);
 
-        int out_RD = rubleToDollar(in);
-        boolean passed_RD = expected == out_RD;
-            System.out.println("140 rubles are 2. Test result №2: " + passed_RD);
+        int outRd = rubleToDollar(in);
+        boolean passedRd = expected == outRd;
+            System.out.println("140 rubles are 2. Test result №2: " + passedRd);
 
         int expected1 = 9800;
-        int out_ER = euroToRuble(in);
-        boolean passed_ER = expected1 == out_ER;
-            System.out.println("140 euro are 9800. Test result №3: " + passed_ER);
+        int outEr = euroToRuble(in);
+        boolean passedEr = expected1 == outEr;
+            System.out.println("140 euro are 9800. Test result №3: " + passedEr);
 
         int expected2 = 8400;
-        int out_DR = dollarToRuble(in);
-        boolean passed_DR = expected2 == out_DR;
-            System.out.println("140 dollars are 8400. Test result №4: " + passed_DR);
+        int outDr = dollarToRuble(in);
+        boolean passedDr = expected2 == outDr;
+            System.out.println("140 dollars are 8400. Test result №4: " + passedDr);
 
 
     }
