@@ -6,7 +6,7 @@ public class MatrixCheck {
         int vert = 0;
         int hor = 0;
         for (int row = 0; row < board.length; row++) {
-            if (board[row][row] == 'X')
+            if (board[row][row] == 'X') {
                 for (int cell = 0; cell < board.length; cell++) {
                     if (board[row][cell] == 'X') {
                         vert++;
@@ -20,8 +20,10 @@ public class MatrixCheck {
                         result = true;
                     }
                 }
-            // System.out.println();
+                // System.out.println();
+            }
         }
+
         return result;
     }
 
